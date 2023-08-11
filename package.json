@@ -1,0 +1,19 @@
+{
+  "name": "mytinerary-back-edwinperez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwingpe/mytinerary-back-edwinPerez.git"
+  },
+  "author": "Edwin Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edwingpe/mytinerary-back-edwinPerez/issues"
+  },
+  "homepage": "https://github.com/edwingpe/mytinerary-back-edwinPerez#readme"
+}
