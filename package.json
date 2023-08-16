@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/edwingpe/mytinerary-back-edwinPerez/issues"
   },
-  "homepage": "https://github.com/edwingpe/mytinerary-back-edwinPerez#readme"
+  "homepage": "https://github.com/edwingpe/mytinerary-back-edwinPerez#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
