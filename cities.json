@@ -1,0 +1,84 @@
+{
+    "cities" : [
+        {
+            "city": "Bolivar",
+            "country": "Venezuela",
+            "image":"https://i.postimg.cc/zBKL454D/salto-angel.jpg",
+            "user":"64e408d9914e7ffda0ead59f"
+        },
+        {
+            "city": "Buenos Aires",
+            "country": "Argentina",
+            "image":"https://i.postimg.cc/3NhyTVHX/buenos-aires.jpg",
+            "user":"64e408d9914e7ffda0ead59f"
+        },
+        {
+            "city": "El Cairo",
+            "country": "Egipto",
+            "image":"https://i.postimg.cc/g0wLq3DZ/cairo.jpg",
+            "user":"64e408d9914e7ffda0ead59f"
+        },
+        {
+            "city": "El Chalten",
+            "country": "Argentina",
+            "image":"https://i.postimg.cc/YqkgKGp5/chalten.jpg",
+            "user":"64e408d9914e7ffda0ead59f"
+        },
+        {
+            "city": "Honshu",
+            "country": "Japan",
+            "image":"https://i.postimg.cc/CKWBvdP6/honshu.jpg"
+        },
+        {
+            "city": "Moscu",
+            "country": "Rusia",
+            "image":"https://i.postimg.cc/QCgTKsqY/moscu.jpg"   
+        },
+        {
+            "city": "Machu Pichu",
+            "country": "Peru",
+            "image":"https://i.postimg.cc/5N3zx4y6/machu-pichu.jpg"
+        },
+        {
+            "city": "New York",
+            "country": "United States",
+            "image":"https://i.postimg.cc/kXnVY0s9/newyork.jpg"  
+        },
+        {
+            "city": "Osaka",
+            "country": "Japan",
+            "image":"https://i.postimg.cc/CMbDQHVC/osaka.jpg"
+        },
+        {
+            "city": "Paris",
+            "country": "France",
+            "image":"https://i.postimg.cc/P55wJgvK/paris.jpg"
+        },
+        {
+            "city": "Rio de Janerio",
+            "country": "Brasil",
+            "image":"https://i.postimg.cc/FzXSK10J/rio-de-janeiro.jpg"
+        },
+        {
+            "city": "Rome",
+            "country": "Italia",
+            "image":"https://i.postimg.cc/J73DqrbP/roma.jpg" 
+        },
+        {
+            "city": "Santiago de Chile",
+            "country": "Chile",
+            "image":"https://i.postimg.cc/sgHZhTpz/santiago-de-chile.jpg"  
+        },
+        {
+            "city": "Sidney",
+            "country": "Australia",
+            "image":"https://i.postimg.cc/6pq8tCFm/sidney.jpg"
+        },
+        {
+            "city": "Yucatan",
+            "country": "Mexico",
+            "image":"https://i.postimg.cc/FzxYsp92/yucatan.jpg"
+        }
+
+    ]
+}
