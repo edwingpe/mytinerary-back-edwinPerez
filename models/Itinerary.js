@@ -6,7 +6,6 @@ let schema = new Schema({
     user: { type: Types.ObjectId, ref: 'users'},
     city: { type: Types.ObjectId, ref: 'cities'},
     name: { type: String, required: true },
-    description: { type: String, required: true },
     price: { type: Number, required: true },
     duration: { type: Number, required: true },
     likes: { type: Number, required: false },
