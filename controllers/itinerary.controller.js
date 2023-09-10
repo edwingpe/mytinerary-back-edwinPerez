@@ -1,10 +1,16 @@
-import bodyParser from 'body-parser';
 import Itinerary from '../models/Itinerary.js'
 
 const controller = {
     getItineraries : async (req, res) => {
+        let queries = {}
+
+        if (req.query.cityid) {
+            //Itinerarios por ciudad
+            queries.city = req.query.cityid
+        }
+
         try {
-            const itineraries = await Itinerary.find();
+            const itineraries = await Itinerary.find(queries).populate('city')
             return res.status(200).json({
                 success: true,
                 itineraries
@@ -17,9 +23,27 @@ const controller = {
         }
     },
 
-    getItinerariesByCity : async (req, res) => {},
+    getItineraryById : async (req, res) => {
+        try {
+            const itinerary = await Itinerary.findById(req.params.id)
 
-    getItineraryById : async (req, res) => {},
+            if (itinerary) {
+                return res.status(200).json({
+                    success: true,
+                    itinerary
+                })
+            }
+            return res.status(404).json ({
+                success: false,
+                message: 'Can not find the itinerary'
+            })
+        } catch (error) {
+            return res.status(500).json({
+                success: false,
+                message: 'Can not get itinerary'
+            })
+        }
+    },
 
     createItinerary : async (req,res) => {
         try {
@@ -38,7 +62,20 @@ const controller = {
         }
     },
 
-    updateItinerary : async (req, res) => {},
+    updateItinerary : async (req, res) => {
+        try {
+            await Itinerary.updateOne({_id: req.params.id}, req.body)
+            return res.status(200).json({
+                success: true,
+                message: 'Update successfully'
+            })
+        } catch (error){
+            return res.status(500).json({
+                success: false,
+                message: 'Impossible update'
+            })
+        }
+    },
 
     deleteItinerary: async (req,res) => {
         try{
