@@ -9,7 +9,7 @@ const controller = {
         }
 
         try {
-            const users = await User.find(queries)
+            const users = await User.find(queries).populate('itineraries')
 
             if ( users.length > 0 ) {
                 return res.status(200).json({

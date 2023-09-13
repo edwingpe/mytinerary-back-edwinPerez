@@ -1,4 +1,3 @@
-import { log } from 'console'
 import Itinerary from '../models/Itinerary.js'
 
 const controller = {
@@ -11,7 +10,15 @@ const controller = {
         }
 
         try {
-            const itineraries = await Itinerary.find(queries).populate('city','city')
+            const itineraries = await Itinerary.find(queries)
+            .populate({
+                path: 'user',
+                select: ''
+            })
+            .populate({
+                path: 'city',
+                select: ''
+            })
             return res.status(200).json({
                 success: true,
                 itineraries
